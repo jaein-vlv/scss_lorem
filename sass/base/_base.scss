@@ -1,0 +1,20 @@
+// icon font
+@import url("https://fonts.googleapis.com/icon?family=Material+Icon");
+//구글폰트
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // 어떤 요소의 넓이, 높이, padding, border px이 포함되는 것을 제외한 사이즈 border-box
+}
+
+html {
+  font-size: 62.5%; // 16px의 62.5% => 10px => 1rem
+}
+
+body {
+  padding: 3rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
