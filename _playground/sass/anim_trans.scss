@@ -1,0 +1,41 @@
+.btn {
+  font-size: 30px;
+  text-decoration: none;
+  // transition: font-size 5s, opacity 10s;
+  transition: all 0.5s;
+
+  &:hover {
+    font-size: 50px;
+    text-decoration: underline;
+    opacity: 0.2;
+  }
+}
+
+// Animation
+@keyframes anim1 {
+  // 시간에 대한 %로 기술 (5초의 0%)
+  0% {
+    // 시작 위치
+    transform: translate(100px, -30px); // y는 아래가 + 위가 -
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    // 5초의 100%
+    // 끝나는 위치
+    opacity: 0.1;
+  }
+}
+
+#box1 {
+  animation-name: anim1;
+  animation-duration: 5s;
+  // animation-fill-mode: forwards; // 마지막 상태 유지
+  animation-fill-mode: both; // delay가 있을때 시작 상태 유지 0%
+  animation-delay: 3s; // 3초있다가 애니메이션 시작
+  animation-iteration-count: 1;
+}
